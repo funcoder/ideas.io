@@ -4,19 +4,16 @@
             <thead>
                 <tr>
                     <th>Idea</th>
-                    <th colspan="2">Options</th>
+                    <th>Options</th>
                 </tr>
             </thead>
             <tbody>
                 {{#each ideas}}
                     <tr>
-                        <td>{{details}}</td>
+                        <td>{{title}}</td>
                         <td>
                             <a class="btn btn-danger delete" href="#"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
-                            
-                        </td>
-                        <td>
-                            <a class="btn btn-primary update" href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                            <a class="btn btn-primary btn-beside update" href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                         </td>
                     </tr>
                 {{/each}}

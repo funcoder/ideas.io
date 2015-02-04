@@ -15,5 +15,13 @@ Template.ideas.events({
             Meteor.call("removeIdea", currentIdeaId);
             Router.go('ideas');
         }
+    },
+    'click .update': function(e) {
+        e.preventDefault();
+        console.log('Editing idea');
+        
+        var ideaId = this._id;
+        
+        Router.go('ideaEdit', {_id: ideaId });
     }
 })

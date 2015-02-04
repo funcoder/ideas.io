@@ -1,0 +1,21 @@
+<template name="ideaEdit">
+    <div class="container-fluid">
+        <form class="main form">
+            <div class="form-group">
+                <label class="control-label" for="title">Title</label>
+                <div class="controls">
+                    <input name="title" id="title" type="text" value="{{title}}" placeholder="What's your idea" class="form-control" />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="control-label" for="details">Details</label>
+                <div class="controls">
+                    <input type="textarea" name="details" id="details" value="{{details}}" class="form-control" />
+                </div>
+            </div>
+            <input type="submit" value="Update" class="btn btn-primary submit" />
+            <a class="btn btn-danger btn-beside delete" href="#">Delete Idea</a>
+        </form>
+    </div>
+</template>
