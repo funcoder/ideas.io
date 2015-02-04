@@ -1,0 +1,29 @@
+<template name="ideas">
+    <div class="container-fluid">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Idea</th>
+                    <th colspan="2">Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each ideas}}
+                    <tr>
+                        <td>{{details}}</td>
+                        <td>
+                            <a class="btn btn-danger delete" href="#"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+                            
+                        </td>
+                        <td>
+                            <a class="btn btn-primary update" href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </table>    
+    </div>
+</template>
