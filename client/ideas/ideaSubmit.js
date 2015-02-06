@@ -10,7 +10,7 @@ Template.ideaSubmit.events({
         Meteor.call('ideaInsert', idea, function(error, result) {
             if (error) 
                 return alert(error.reason);
-            Router.go('/');    
+            Router.go('ideas');    
         })
         
         
