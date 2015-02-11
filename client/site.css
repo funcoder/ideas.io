@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+span.glyphicon-link {
+    font-size: 1.2em;
+}
+
 .contents {
     padding-top: 10px;
 }

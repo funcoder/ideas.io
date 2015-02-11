@@ -14,8 +14,15 @@
             <div class="collapse navbar-collapse" id="navigation">
                 <ul class="nav navbar-nav" id="nav-items">
                     {{#if currentUser}}
-                        <li><a href="{{pathFor 'ideas'}}">Ideas</a></li>
-                        <li><a href="{{pathFor 'ideaSubmit'}}">Add Idea</a></li>
+                        <li>
+                            <a role="menuitem" href="{{pathFor 'ideas'}}">
+                                <span class="glyphicon glyphicon-th-list"> </span>
+                                Ideas
+                            </a>
+                        </li>
+                        <li><a href="{{pathFor 'ideaSubmit'}}">
+                            <span class="glyphicon glyphicon-plus"> </span>
+                            Add Idea</a></li>
                     {{/if}}
                     
                 </ul>
