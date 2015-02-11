@@ -8,6 +8,8 @@ Template.ideaSubmit.events({
             coolidea: $(e.target).find('[name=coolidea]').prop("checked")
         };
         
+        console.log("Idea coolidea:" + idea.coolidea)
+        
         Meteor.call('ideaInsert', idea, function(error, result) {
             if (error) 
                 return alert(error.reason);
