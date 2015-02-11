@@ -6,11 +6,14 @@
 
 <template name="layout">
     {{> navigation }}
-    <div class="container-fluid">
-        <div class="contents row">
-            {{> yield }}            
+    <div id="wrap">
+        <div class="container-fluid">
+            <div class="contents row">
+                {{> yield }}            
+            </div>
         </div>
+        
     </div>
     
-
+    {{> footer }}
 </template>
