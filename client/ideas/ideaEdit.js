@@ -17,7 +17,8 @@ Template.ideaEdit.events({
         var ideaId = this._id;
         var ideaProperties = {
             title: $(e.target).find('[name=title]').val(),
-            details: $(e.target).find('[name=details]').val()
+            details: $(e.target).find('[name=details]').val(),
+            coolidea: $(e.target).find('[name=coolidea]').prop("checked")
         }
         
         Ideas.update(ideaId, {$set: ideaProperties}, function(error) {

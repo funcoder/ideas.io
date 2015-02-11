@@ -1,13 +1,28 @@
 body {
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+    padding-top: 70px;
 }
 
 span.glyphicon-link {
     font-size: 1.2em;
 }
 
+.home-title {
+    text-align:center;
+    padding-top: 30px;
+}
+
+
+
+
 .contents {
     padding-top: 10px;
+}
+
+.ideas-table {
+    font-size: 1.2em;
+    
 }
 
 th.details {

@@ -1,16 +1,22 @@
 <template name="ideas">
     
     <div class="container">
-        <table class="table table-striped">
+        <table class="table table-striped ideas-table">
             <thead>
                 <tr>
-                    <th class="details">Idea</th>
+                    <th class="cool">Cool</th>
+                    <th class="details">My Ideas</th>
                     <th class="options">Options</th>
                 </tr>
             </thead>
             <tbody>
                 {{#each ideas}}
                     <tr>
+                        <td>
+                            {{#if coolidea}}
+                                <span class="glyphicon glyphicon-ok"></span>
+                            {{/if}}
+                        </td>
                         <td>{{title}}</td>
                         <td class="options-buttons">
                             <a class="btn btn-danger delete options-button" href="#"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>

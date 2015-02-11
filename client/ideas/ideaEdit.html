@@ -11,11 +11,17 @@
             <div class="form-group">
                 <label class="control-label" for="details">Details</label>
                 <div class="controls">
-                    <input type="textarea" name="details" id="details" value="{{details}}" class="form-control" />
+                    <input type="textarea" name="details" id="details" value="{{details}}" class="form-control" rows="5" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label><input type="checkbox" name="coolidea" id="coolidea" checked="{{coolidea}}"  />Cool Idea</label>
                 </div>
             </div>
             <input type="submit" value="Update" class="btn btn-primary submit" />
             <a class="btn btn-danger btn-beside delete" href="#">Delete Idea</a>
+            <a class="btn btn-default btn-beside" href="{{pathFor 'home'}}">Cancel</a>
         </form>
     </div>
 </template>

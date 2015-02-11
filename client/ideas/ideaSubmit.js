@@ -4,7 +4,8 @@ Template.ideaSubmit.events({
         
         var idea = {
             title: $(e.target).find('[name=title]').val(),
-            details: $(e.target).find('[name=details]').val()
+            details: $(e.target).find('[name=details]').val(),
+            coolidea: $(e.target).find('[name=coolidea]').prop("checked")
         };
         
         Meteor.call('ideaInsert', idea, function(error, result) {
