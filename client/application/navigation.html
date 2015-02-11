@@ -1,5 +1,5 @@
 <template name="navigation">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
@@ -12,7 +12,7 @@
             </div>
             
             <div class="collapse navbar-collapse" id="navigation">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="nav-items">
                     {{#if currentUser}}
                         <li><a href="{{pathFor 'ideas'}}">Ideas</a></li>
                         <li><a href="{{pathFor 'ideaSubmit'}}">Add Idea</a></li>
